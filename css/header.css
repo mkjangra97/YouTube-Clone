@@ -1,0 +1,142 @@
+.header {
+    height: 60px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(202, 201, 201);
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+.left-section {
+width: 250px;
+display: flex;
+align-items: center;
+}
+
+.menu-bar {
+    height: 23px;
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.logo-bar {
+    height: 30px;
+    width: 90px;
+}
+.middle-section {
+flex: 1;
+display: flex;
+align-items: center;
+margin-left: 170px;
+margin-right: 160px;
+max-width: 800px;
+}
+
+.search-box {
+flex: 1;
+width: 0;
+height: 40px;
+font-size: 14px;
+padding-left: 15px;
+border-radius: 20px 0px 0px 20px;
+border: 2px;
+border-color: #969696;
+box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.16);
+}
+
+.search-box::placeholder {
+    font-family: Roboto, Arial;
+    padding-left: 18px;
+    font-size: 16px;
+}
+.search-icon {
+    width: 70px;
+    height: 40px;
+    border-radius: 0px 20px 20px 0px;
+    margin-right: 16px;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.16);
+    border: 1px;
+    background-color: #f4f4f4;
+}
+
+.search-icon, .voice-icon, .upload-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.search-icon .search-text,
+.voice-icon .voice-icon-text,
+.upload-icon-container .search-text {
+    background-color: black;
+    color: white;
+    font-family: Roboto,Arial;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    position: absolute;
+    bottom: -35px;
+    font-size: 16px;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+}
+
+.search-icon:hover .search-text,
+.voice-icon:hover .voice-icon-text,
+.upload-icon-container:hover .search-text {
+    opacity: 1;
+}
+
+button > img {
+    height: 24px;
+    width: 24px;
+}
+
+.voice-icon {
+    width: 45px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.voice-icon:hover img {
+    padding: 5px;
+    border-radius: 50px;
+    background-color: rgb(225, 225, 225);
+}
+
+.right-section {
+width: 250px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-right: 40px;
+flex-shrink: 0;
+}
+
+.upload-icon-container {
+    margin-right: 28px;
+}
+
+.upload-img, .apps-icon, .noti-icon, .channel-icon
+{
+    height: 30px;
+}
+.channel-icon {
+    border-radius: 13px;
+}

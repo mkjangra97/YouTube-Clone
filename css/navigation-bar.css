@@ -1,0 +1,24 @@
+.category-menu {
+    border: none;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    margin-right: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Roboto,Arial;
+    background-color: rgb(232, 228, 228);
+}
+
+.category-menu:hover {
+background-color: black;
+color: white;
+}
+.navigation-bar {
+    justify-content: space-between;
+    position: absolute;
+    top: 70px;
+}
